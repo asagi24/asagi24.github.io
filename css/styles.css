@@ -1,0 +1,287 @@
+body{
+  background: #333631;
+  margin: 0px;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
+
+header{
+  background: white;
+  display: flex;
+  height: 50px;
+  padding: 100px 50px 10px 50px;
+}
+
+header .name h1{
+  font-weight: lighter;
+  font-size: 40px;
+  margin: 0;
+}
+
+header .menu{
+  width: 500px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+header .menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 5px;
+}
+
+header .menu li{
+  font-size: 30px;
+ /* background: rgba(255, 255, 255, 0.9); */
+ background: lightgray;
+ width: 220px;
+ text-align: center;
+ border-radius: 5px;
+ /* -webkit-transition: all .3s; */
+    transition: all 1s;
+}
+
+header .menu li:hover{
+  background: #67b5b7;
+  opacity: 0.9; 
+}
+
+header .menu a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Goudy Bookletter 1911', serif;
+ display: block;
+}
+
+.container{
+  padding: 60px;
+  display: flex;
+  
+}
+#test{
+  height: 600px;
+  overflow: hidden
+  }
+  #test:after{
+  content:"";
+  display: block;
+  width: 1px;
+  border-left:1px white solid;
+  animation:scroll 2s ease 0s infinite normal;
+  }
+  @keyframes scroll{
+  0%{
+  height: 0;
+  }
+  50%{
+  height: 600px;
+  margin-top: 0;
+  }
+  100%{
+  margin-top: 600px;
+  height: 600px;
+  }
+  }
+
+  .content{
+    width: 900px;
+    margin: auto;
+  }
+
+  .content-top{
+    display: flex;
+  }
+
+  .content-top .left{
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+  .content .content-top img{
+    width: 450px;
+  }
+
+  .content-top p{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Goudy Bookletter 1911', serif;
+    /* font-family: 'Alegreya Sans SC', sans-serif; */
+  }
+
+ .content #profile{
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 250px;
+  }
+
+  #profile h2{
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  #profile p{
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  #works{
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 200px;
+  }
+
+  #works h1, #profile h1{
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    background: linear-gradient(transparent 40%, #3da798);
+    /* font-weight: bold;  */
+    width: 190px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+
+  #works h2{
+    font-size: 30px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    width: 900px;
+    line-height: 200px;
+    border: solid 4px whitesmoke;
+    transition: all 1s;
+  }
+
+  #works a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+  }
+
+  #works .web:hover{
+    background: rgb(10, 112, 172);
+    opacity: 0.8;
+  }
+
+  #works .other:hover{
+    background: rgb(112, 179, 137);
+    opacity: 0.8;
+  }
+
+  .go-top a {
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: solid 4px whitesmoke;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+  }
+  
+  .go-top a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #67b5b7;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0, 0);
+    transition: transform ease 0.4s;
+  }
+  
+  .go-top a:hover:after {
+    transform: translate(-50%, -50%) scale(1.1, 1.1);
+  }
+  
+  .go-top a:before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 55%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 6px 0 0 6px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: border-color ease 0.1s;
+  }
+  
+  .go-top a:hover:before {
+    border-color: #fff;
+  }
+  
+  /* works */
+  .ninoiro{
+    display: flex;
+  }
+
+  .ninoiro img{
+    width: 450px;
+  }
+  .ninoiro img:hover{
+    opacity: 0.6;
+  }
+  .ninoiro .desc{
+    color: whitesmoke;
+    margin-left: 20px;
+  }
+
+  .ninoiro h1{
+    font-size: 40px;
+    margin: 0;
+    font-family: 'Goudy Bookletter 1911', serif;
+    }
+
+    .tech{
+      color: whitesmoke;
+    }
+
+    .site{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .site-box{
+      width: 250px;
+      height: 165px;
+      position: relative;
+      overflow: hidden;
+    }
+  .site-box a{
+    display: block;
+  }
+    .site-box a:hover{
+      opacity: 0.5;
+    }
+    .site-box .box-inner{
+      /* text-align: center; */
+      width: 250px;
+      height: 165px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      background: rgba(0,0,0,0.6);
+      opacity: 0;
+    }
+
+    .site-box:hover .box-inner{
+      opacity: 1;
+    }
+    .box-inner h2{
+      margin: auto 0;
+      line-height: 165px;
+      color: whitesmoke;
+      font-family: 'Goudy Bookletter 1911', serif;
+      font-size: 2.5em;
+    }
+
+    .site-box img{
+      width: 100%;
+    }
